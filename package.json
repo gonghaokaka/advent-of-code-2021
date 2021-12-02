@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node main.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.3.0"
+  }
+}
