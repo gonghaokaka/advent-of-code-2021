@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-    const input = fs.readFileSync("./q10.txt", "utf8").toString().split("\r\n")
+    const input = fs.readFileSync("./q10.txt", "utf8").toString().split("\n")
 
     const mappings = {
         "(": ")",

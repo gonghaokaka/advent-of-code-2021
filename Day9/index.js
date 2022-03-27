@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-    const input = fs.readFileSync("./q9.txt", "utf8").toString().split("\r\n")
+    const input = fs.readFileSync("./q9.txt", "utf8").toString().split("\n")
 
     let map = [], cols = input[0].length, rows = input.length;
 

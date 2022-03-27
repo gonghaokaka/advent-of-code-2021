@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 
 const data = fs.readFileSync('q1.txt', 'utf8')
-    .toString().split("\r\n").map((line) => +line)
+    .toString().split("\n").map((line) => +line)
 
 const result = data.reduce((res, _, ix, array) => {
     return array[ix] > array[ix-1] ? res+1 : res

@@ -2,7 +2,7 @@ import * as fs from 'fs';
 
 
 const data = fs.readFileSync("q3.txt", "utf8")
-    .toString().split("\r\n")
+    .toString().split("\n")
 
 function getBinary(input) {
     return input.reduce((res, curr) => {

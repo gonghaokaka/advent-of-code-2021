@@ -2,7 +2,7 @@ import * as fs from 'fs';
 
 
 const data = fs.readFileSync("./q5.txt", "utf8")
-    .toString().split("\r\n")
+    .toString().split("\n")
 
 const tmp1 = data
     .reduce((res, line) => {

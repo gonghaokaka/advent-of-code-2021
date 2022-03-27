@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const input = fs.readFileSync("./q11.txt", "utf8").toString().split("\r\n")
+const input = fs.readFileSync("./q11.txt", "utf8").toString().split("\n")
 
 function refreshMatrix(inputs){
     let m = []
@@ -42,8 +42,11 @@ function findNeighbors(location) {
         return [`${loc[0]}${loc[1]}`]
     })
 
-    return neighbours.map((el) => {
-        return matrix.find((opct) => opct.postion === el)
+    return matrix.flatMap((octp) => {
+        if(neighbours.includes(octp.postion)){
+            return [octp]
+        }
+        return []
     })
 }
 
@@ -70,6 +73,7 @@ function increaseEnergy(inputs) {
 }
 
 function decreaseEnergy(octp) {
+    console.log(octp)
     return matrix.flatMap((el) => {
         if (el.postion === octp.postion) {
             return [{

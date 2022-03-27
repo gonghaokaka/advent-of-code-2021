@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const raw = fs.readFileSync("./q8.txt", "utf8").toString().split("\r\n")
+const raw = fs.readFileSync("./q8.txt", "utf8").toString().split("\n")
 const part1 = raw.map((el) => {
     return el.split("|")[1]
 })

@@ -2,7 +2,7 @@ import * as fs from 'fs';
 
 
 const data = fs.readFileSync("./q4.txt", "utf8")
-    .toString().split("\r\n")
+    .toString().split("\n")
 
 const drawnNumbers = data[0].split(",").map((el) => +el)
 const boards = data.splice(1)
